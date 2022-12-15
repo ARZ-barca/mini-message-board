@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <h1><%= locals.title %></h1>
+    <p>Welcome to <%= locals.title %></p>
+    <p>
+      <% locals.messages.forEach(function(message){ %> <p><%= message.text %></p> <% }); %>
+    </p>
+  </body>
+</html>
