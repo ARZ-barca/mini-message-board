@@ -5,10 +5,14 @@
     <link rel="stylesheet" href="/stylesheets/style.css" />
   </head>
   <body>
-    <h1><%= locals.title %></h1>
-    <p>Welcome to <%= locals.title %></p>
-    <p>
-      <% locals.messages.forEach(function(message){ %> <p><%= message.text %></p> <% }); %>
-    </p>
+    <div class="page">
+      <h1><%= locals.title %></h1>
+      <ul>
+        <% locals.messages.forEach(function(message){ %>
+        <li><%= message.text %></li>
+        <% }); %>
+      </ul>
+      <a href="/new" class="new-message">new message</a>
+    </div>
   </body>
 </html>

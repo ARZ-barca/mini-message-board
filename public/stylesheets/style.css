@@ -4,6 +4,23 @@
   box-sizing: border-box;
 }
 
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px;
+  align-items: center;
+}
+
+.new-message {
+  color: white;
+  border: 1px solid gray;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: black;
+  text-decoration: none;
+}
+
 .form {
   display: flex;
   justify-content: center;
